@@ -14,6 +14,8 @@ def main():
     tmr = 0
     kk_img=pg.image.load("fig/3.png")
     kk_img=pg.transform.flip(kk_img,True,False)
+    kk_rct=kk_img.get_rect()
+    kk_rct.center=300,200
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
@@ -27,7 +29,7 @@ def main():
 
         pg.display.update()
         tmr += 1      
-        clock.tick(1000)
+        clock.tick(200)
 
 
 if __name__ == "__main__":
