@@ -19,6 +19,7 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
+        kye_lst=pg.key.get_pressed()
 
         if tmr>3199:
             tmr=0
