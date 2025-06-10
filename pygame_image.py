@@ -18,13 +18,16 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
+        if tmr>3199:
+            tmr=0
         screen.blit(bg_img, [tmr*-1, 0])
         screen.blit(bg_img2, [tmr*-1+1600, 0])
+        screen.blit(bg_img, [tmr*-1+3200, 0])
         screen.blit(kk_img, [300, 200])
 
         pg.display.update()
-        tmr += 1        
-        clock.tick(200)
+        tmr += 1      
+        clock.tick(1000)
 
 
 if __name__ == "__main__":
