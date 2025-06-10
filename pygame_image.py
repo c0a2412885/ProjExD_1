@@ -46,7 +46,7 @@ def main():
             kk_x=0
             kk_y=0
         
-        kk_rct.move_ip((-1+kk_x,kk_y))
+        kk_rct.move_ip((-1+kk_x,kk_y))#一個だけ
         
         if tmr>3199:
             tmr=0
